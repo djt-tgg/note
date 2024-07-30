@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.14" />
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+
+      html.dark {
+        --c-bg: #22272e;
+      }
+
+      html,
+      body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
+        document.documentElement.classList.toggle('dark', true)
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <meta name="description" content="Tgg的前端个人技术笔记，涵盖前端开发、Vue.js、JavaScript教程和实战经验分享。"><meta name="keywords" content="前端开发, Vue.js, JavaScript, 博客, 技术分享, Tgg, 个人技术笔记"><link rel="icon" href="/note/images/logo/favicon.png"><script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?abf6c1302a01783f0bc28b1183ff51af";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script><script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/eruda/2.4.1/eruda.min.js"></script><script>
+    var _hmt = _hmt || [];
+    setTimeout(() => {
+    eruda.init();
+    }, 2000);
+    </script><title>Tgg</title>
+    <link rel="preload" href="/note/assets/style-CIRS0eOY.css" as="style"><link rel="stylesheet" href="/note/assets/style-CIRS0eOY.css">
+    <link rel="modulepreload" href="/note/assets/app-CebKgOdK.js"><link rel="modulepreload" href="/note/assets/index.html-CAYUjVHy.js">
+    <link rel="prefetch" href="/note/assets/index.html-zVJ0sDy9.js" as="script"><link rel="prefetch" href="/note/assets/index.html-BDY4Jqtz.js" as="script"><link rel="prefetch" href="/note/assets/index.html-B82YJsvB.js" as="script"><link rel="prefetch" href="/note/assets/index.html-osYu_wdO.js" as="script"><link rel="prefetch" href="/note/assets/index.html-CUlWdXYi.js" as="script"><link rel="prefetch" href="/note/assets/index.html-C5hdSEsZ.js" as="script"><link rel="prefetch" href="/note/assets/index.html-oiDqjENt.js" as="script"><link rel="prefetch" href="/note/assets/404.html-Bi_UiGSI.js" as="script"><link rel="prefetch" href="/note/assets/giscus-D-fkNSKD.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container no-sidebar external-link-icon MyHome"><!--[--><header class="vp-navbar"><div class="vp-toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a class="route-link" href="/note/"><img class="vp-site-logo" src="/note/images/home.jpg" alt="Tgg"><span class="vp-site-name vp-hide-mobile" aria-hidden="true">Tgg</span></a></span><div class="vp-navbar-items-wrapper" style=""><!--[--><!--]--><nav class="vp-navbar-items vp-hide-mobile" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link route-link-active auto-link" href="/note/" aria-label="Home"><!---->Home<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/Js/" aria-label="Js"><!---->Js<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/Vue2/" aria-label="Vue2"><!---->Vue2<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/Vue3/" aria-label="Vue3"><!---->Vue3<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/Ts/" aria-label="Ts"><!---->Ts<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/React/" aria-label="React"><!---->React<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/Utils/" aria-label="Utils"><!---->Utils<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/%E5%BE%AE%E5%89%8D%E7%AB%AF/" aria-label="微前端"><!---->微前端<!----></a></div><!--]--></nav><!--[--><!--]--><button class="vp-toggle-color-mode-button" title="toggle color mode"><svg class="light-icon" viewbox="0 0 32 32" style=""><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg class="dark-icon" viewbox="0 0 32 32" style="display:none;"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><form class="search-box" role="search"><input type="search" autocomplete="off" spellcheck="false" value><!----></form></div></header><!--]--><div class="vp-sidebar-mask"></div><!--[--><aside class="vp-sidebar"><nav class="vp-navbar-items" aria-label="site navigation"><!--[--><div class="vp-navbar-item"><a class="route-link route-link-active auto-link" href="/note/" aria-label="Home"><!---->Home<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/Js/" aria-label="Js"><!---->Js<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/Vue2/" aria-label="Vue2"><!---->Vue2<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/Vue3/" aria-label="Vue3"><!---->Vue3<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/Ts/" aria-label="Ts"><!---->Ts<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/React/" aria-label="React"><!---->React<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/Utils/" aria-label="Utils"><!---->Utils<!----></a></div><div class="vp-navbar-item"><a class="route-link auto-link" href="/note/%E5%BE%AE%E5%89%8D%E7%AB%AF/" aria-label="微前端"><!---->微前端<!----></a></div><!--]--></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="vp-home"><header class="vp-hero"><img class="vp-hero-image" src="/note/images/home.jpg" alt="首页图片" height="280"><h1 id="main-title">Tgg的个人笔记</h1><p class="vp-hero-description">记录日常代码,个人笔记与你分享</p><p class="vp-hero-actions"><!--[--><a class="route-link auto-link vp-hero-action-button primary" href="/note/Js/" aria-label="点击进入"><!---->点击进入<!----></a><!--]--></p></header><!----><div class="theme-default-content"><div><div style="width:100%;height:100vh;overflow:hidden;" data-v-3f009219><button class="toggle" data-v-3f009219>切换首页</button><div data-v-3f009219><div class="swiper" style="width:100%;height:100%;" data-v-3f009219><!--[--><!--]--><div class="swiper-wrapper"><!--[--><!--]--><!--[--><div class="swiper-slide" data-swiper-slide-index="0" data-v-3f009219><!--[--><div class="swiper1" data-v-3f009219></div><!--]--><!----></div><div class="swiper-slide" data-swiper-slide-index="1" data-v-3f009219><!--[--><div class="swiper2" data-v-3f009219></div><!--]--><!----></div><div class="swiper-slide" data-swiper-slide-index="2" data-v-3f009219><!--[--><div class="swiper3" data-v-3f009219></div><!--]--><!----></div><!--]--><!--[--><!--]--></div><!----><!----><!----><!--[--><!--]--></div></div></div></div></div><!----></main><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/note/assets/app-CebKgOdK.js" defer></script>
+  </body>
+</html>
